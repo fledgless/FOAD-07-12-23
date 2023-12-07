@@ -12,6 +12,6 @@ $nombres = array($nombre1, $nombre2, $nombre3, $nombre4, $nombre5);
 
 $somme = $nombre1 + $nombre2 + $nombre3 + $nombre4 + $nombre5;
 
-print_r($nombres);
-echo $somme;
+print_r($nombres) . PHP_EOL;
+echo "La somme des éléments du tableau est $somme";
 ?>
