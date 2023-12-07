@@ -12,12 +12,12 @@ for ($i = 0; $i < $nombreElements; $i++) {
 }
 
 $element = intval(readline("Veuillez saisir l'élément recherché :"));
-$i = $nombreElements;
+$i = $nombreElements - 1;
 
-while ($i > 0 && $existe = false) {
+foreach ($listeElements as $cle => $valeur) {
     if ($listeElements[$i] == $element) {
         $existe = true;
-        $premiereOccurence = $i;
+        $derniereOccurence = $i;
     } else {
         $i -= 1;      
     }

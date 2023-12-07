@@ -16,18 +16,17 @@ $i = 1;
 
 $premiereOccurence = 0;
 
-while ($i <= $nombreElements && $existe = false) {
+foreach ($listeElements as $cle => $valeur) {
     if ($listeElements[$i] == $element) {
         $existe = true;
         $premiereOccurence = $i;
     } else {
         $i += 1;      
-    }
-}   
+    }  
+}
 
 if ($existe = true) {
         echo "La première occurence est $premiereOccurence.";
 } else {
         echo "Cet élément n'est pas dans le tableau.";
 }   
-       
