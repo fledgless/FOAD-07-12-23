@@ -5,7 +5,7 @@ Ecrire un algorithme permettant de saisir 5 réelles au clavier, les stocker dan
 $listeReelles = array();
 
 for ($i = 0; $i < 5; $i++) {
-    $listeReelles[] = readline("Entrez un élément :");
+    $listeReelles[] = intval(readline("Entrez un élément :"));
     $somme = array_sum($listeReelles);
 }
 
